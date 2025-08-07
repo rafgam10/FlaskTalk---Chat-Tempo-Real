@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Página index.html */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Página chat.html */
+main {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.view-msg {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Mensagens */
+.msg-usuario {
+    align-self: flex-end;
+    background-color: #d1e7ff;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.msg-outra {
+    align-self: flex-start;
+    background-color: #e2e3e5;
+    padding: 10px 15px;
+    border-radius: 15px 15px 15px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.barra-msg {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.barra-msg input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.barra-msg button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barra-msg button:hover {
+    background-color: #0056b3;
+}
+
+#icon-send {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#icon-send:hover {
+    transform: scale(1.1);
+}
+
+
+/* Customização das msg */
+.mensagem {
+    max-width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.usuario {
+    background-color: #d1e7dd;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.sistema {
+    background-color: #f8d7da;
+    align-self: flex-start;
+    margin-right: auto;
+}

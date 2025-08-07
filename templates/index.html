@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    {# Colocar um box de msg de aviso, caso o usuário não seja valido #}
+    
+
+
+    {# Formulario para digiter o nome do chat #}
+    
+    <form action="" method="post">
+
+        <label for="nome">Nome por Chat</label>
+        <input type="text" name="nome" id="input-nome" required>
+        <br>
+        <button type="submit">Entrar</button>
+
+    </form>
+
+
+    <script src="{{ url_for('static', filename='script.js' ) }}"></script>
+</body>
+</html>
